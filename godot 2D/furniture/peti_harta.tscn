@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://colmxvcof13wn"]
+
+[ext_resource type="Texture2D" uid="uid://bnqb2s4vu2v76" path="res://asset 2D/Objects/Chest.png" id="1_p17um"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m8qgt"]
+size = Vector2(16, 7)
+
+[node name="peti harta" type="Sprite2D"]
+texture = ExtResource("1_p17um")
+hframes = 5
+vframes = 2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 4.5)
+shape = SubResource("RectangleShape2D_m8qgt")
